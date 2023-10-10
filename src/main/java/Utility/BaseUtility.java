@@ -47,7 +47,7 @@ public class BaseUtility implements Config_Data_Provider, Excel_Data_Provider, E
 			UiAutomator2Options db = new UiAutomator2Options();
 			db.setCapability("appium:automationName", "uiautomator2");
 			db.setCapability("platformName", "Android");
-			db.setCapability("appium:deviceName", "Pixel_6_API_31");
+			db.setCapability("appium:deviceName", "Pixel_6_API_33");
 			db.setCapability("appium:udid", "emulator-5554");
 			db.setCapability("appium:avdLaunchTimeout", 900000);
 			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug_33.apk"));
