@@ -1,0 +1,74 @@
+[INFO ] 2023-12-05 21:22:56.844 [main] Harley - ************************My_Profile_Page_Test**************************
+[INFO ] 2023-12-05 21:23:04.158 [main] Harley - Login with Registered mobile send successfully =8860402480
+[INFO ] 2023-12-05 21:23:06.388 [main] Harley - Coninue button is Visible
+[INFO ] 2023-12-05 21:23:06.931 [main] Harley - Coninue button after enter Valid mobile number is clickable
+[INFO ] 2023-12-05 21:23:12.097 [main] Harley - ENTER 6-DIGIT OTP SENT TO
+[INFO ] 2023-12-05 21:23:18.375 [main] Harley - OTP send successfully =4
+[INFO ] 2023-12-05 21:23:20.088 [main] Harley - OTP send successfully =2
+[INFO ] 2023-12-05 21:23:21.407 [main] Harley - OTP send successfully =4
+[INFO ] 2023-12-05 21:23:22.262 [main] Harley - OTP send successfully =2
+[INFO ] 2023-12-05 21:23:23.353 [main] Harley - OTP send successfully =4
+[INFO ] 2023-12-05 21:23:24.558 [main] Harley - OTP send successfully =3
+[INFO ] 2023-12-05 21:23:28.263 [main] Harley - Verify button is Visible
+[INFO ] 2023-12-05 21:23:32.966 [main] Harley - VERIFY is clickable
+[INFO ] 2023-12-05 21:23:37.718 [main] Harley - WE FOUND 1 VEHICLES LINKED TO YOU
+[INFO ] 2023-12-05 21:23:38.003 [main] Harley - You will always see primary vehicle details by default when you log in.
+[INFO ] 2023-12-05 21:23:38.669 [main] Harley -  Select first vehicle as prime is clickable
+[INFO ] 2023-12-05 21:23:39.996 [main] Harley - Continue Button after select vehicle is clickable
+[INFO ] 2023-12-05 21:23:47.672 [main] Harley - While using the app is clickable
+[INFO ] 2023-12-05 21:23:49.263 [main] Harley -  Allow H-D Connect to access your phone call logs? is clickable
+[INFO ] 2023-12-05 21:23:51.521 [main] Harley -  Allow H-D Connect to access your contacts? is clickable
+[INFO ] 2023-12-05 21:23:52.897 [main] Harley -  Allow H-D Connect to make and manage phone calls? is clickable
+[INFO ] 2023-12-05 21:23:54.268 [main] Harley -  Allow H-D Connect to send and view SMS messages? is clickable
+[INFO ] 2023-12-05 21:23:57.291 [main] Harley - Allow H-D Connect to find, connect to, and determine the relative position of nearby devices? is clickable
+[INFO ] 2023-12-05 21:24:03.415 [main] Harley - Home is clickable
+[INFO ] 2023-12-05 21:24:07.313 [main] Harley - Side menu button is clickable
+[INFO ] 2023-12-05 21:24:08.516 [main] Harley - My profile is clickable
+[INFO ] 2023-12-05 21:24:11.450 [main] Harley - User name = 
+[INFO ] 2023-12-05 21:24:11.953 [main] Harley - User mobile number =
+[INFO ] 2023-12-05 21:24:12.476 [main] Harley - User email =
+[INFO ] 2023-12-05 21:24:13.585 [main] Harley - More details arrow is clickable
+[INFO ] 2023-12-05 21:24:36.527 [main] Harley - DATE OF BIRTH = 01 Nov 1990
+[INFO ] 2023-12-05 21:24:36.869 [main] Harley - GENDER = Male
+[INFO ] 2023-12-05 21:24:37.155 [main] Harley - BLOOD GROUP = B-ve
+[INFO ] 2023-12-05 21:24:37.536 [main] Harley - ADDRESS = New Delhi
+[INFO ] 2023-12-05 21:24:38.118 [main] Harley - Edit profile details button is clickable
+[INFO ] 2023-12-05 21:24:41.057 [main] Harley - profile pic edit button is clickable
+[INFO ] 2023-12-05 21:24:42.934 [main] Harley - while_using_the_app is clickable
+[INFO ] 2023-12-05 21:24:44.356 [main] Harley - Allow is clickable
+[INFO ] 2023-12-05 21:24:46.322 [main] Harley - profile pic edit button is clickable
+[INFO ] 2023-12-05 21:24:47.276 [main] Harley -  Chose profile pic from liberary  is clickable
+[INFO ] 2023-12-05 21:24:51.732 [main] Harley - profile pic edit button is clickable
+[INFO ] 2023-12-05 21:24:52.961 [main] Harley -  Take a pic for profile  is clickable
+[INFO ] 2023-12-05 21:24:58.154 [main] Harley - profile pic edit button is clickable
+[INFO ] 2023-12-05 21:24:59.704 [main] Harley -  Upload close button  is clickable
+[INFO ] 2023-12-05 21:25:02.789 [main] Harley -  Change Name send successfully =Rinku Singh
+[INFO ] 2023-12-05 21:25:05.603 [main] Harley - Tset radio button for =Male is clickable
+[INFO ] 2023-12-05 21:25:07.991 [main] Harley - Tset radio button for =Female is clickable
+[INFO ] 2023-12-05 21:25:10.670 [main] Harley - Tset radio button for =Others is clickable
+[INFO ] 2023-12-05 21:25:13.153 [main] Harley - Finally choose is =Male is clickable
+[INFO ] 2023-12-05 21:25:15.675 [main] Harley -  Change Email id send successfully =rinku.singh@gmail.com
+[INFO ] 2023-12-05 21:25:17.281 [main] Harley -  Date of Birth is clickable
+[INFO ] 2023-12-05 21:25:19.353 [main] Harley - Edit DOB is clickable
+[INFO ] 2023-12-05 21:25:22.398 [main] Harley - change dob in mm/dd/yyyy send successfully =12/10/98
+[INFO ] 2023-12-05 21:25:23.830 [main] Harley -  Confirm DOB is clickable
+[INFO ] 2023-12-05 21:25:25.729 [main] Harley -  Blood group is clickable
+[INFO ] 2023-12-05 21:25:29.093 [main] Harley -  Blood group is clickable
+[INFO ] 2023-12-05 21:25:31.605 [main] Harley - Street name send successfully =Jindal colony
+[INFO ] 2023-12-05 21:25:35.201 [main] Harley - Pin code is clickable
+[INFO ] 2023-12-05 21:25:37.969 [main] Harley - Pin code send successfully =110027
+[INFO ] 2023-12-05 21:25:39.635 [main] Harley - Save button is clickable
+[INFO ] 2023-12-05 21:25:42.271 [main] Harley - Personal Details editd sucessfully
+[INFO ] 2023-12-05 21:25:42.746 [main] Harley - More detail arrow  is clickable
+[INFO ] 2023-12-05 21:25:45.231 [main] Harley - Edit profile details button is clickable
+[INFO ] 2023-12-05 21:25:49.723 [main] Harley -  Original Name send successfully =RANDHIR KUMAR
+[INFO ] 2023-12-05 21:25:54.489 [main] Harley - Original Email id send successfully =randhir.kumar@heromotocorp.com
+[INFO ] 2023-12-05 21:25:57.318 [main] Harley - Save button is clickable
+[INFO ] 2023-12-05 21:26:02.538 [main] Harley - More detail arrow  is clickable
+[INFO ] 2023-12-05 21:26:03.099 [main] Harley -  Manage License is clickable
+[INFO ] 2023-12-05 21:26:45.250 [main] Harley - Manage License is already given
+[INFO ] 2023-12-05 21:26:45.736 [main] Harley -  Back from Driver License is clickable
+[INFO ] 2023-12-05 21:26:47.212 [main] Harley - Emergency contacts is clickable
+[INFO ] 2023-12-05 21:27:29.309 [main] Harley - Emergency contacts is already given
+[INFO ] 2023-12-05 21:27:30.325 [main] Harley -  Back from Emergency Contacts page is clickable
+[INFO ] 2023-12-05 21:27:32.313 [main] Harley -  Back from profile Details is clickable

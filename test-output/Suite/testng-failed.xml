@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utility.Listner"/>
+  </listeners>
+  <test thread-count="5" name="Login page(failed)">
+    <classes>
+      <class name="Page_Object_Test.Login_Page_Test">
+        <methods>
+          <include name="install_And_Open_Mobile_App"/>
+          <include name="TC008_Login_with_Valid_OTP"/>
+        </methods>
+      </class> <!-- Page_Object_Test.Login_Page_Test -->
+    </classes>
+  </test> <!-- Login page(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-05T21:22:45 IST" name="Suite" finished-at="2023-12-05T21:27:32 IST" duration-ms="286492">
+    <groups>
+    </groups>
+    <test started-at="2023-12-05T21:22:45 IST" name="My_Profile_Page_Test" finished-at="2023-12-05T21:27:32 IST" duration-ms="286492">
+      <class name="Page_Object_Test.My_Profile_Page_Test">
+        <test-method is-config="true" signature="install_And_Open_Mobile_App()[pri:0, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:22:45 IST" name="install_And_Open_Mobile_App" finished-at="2023-12-05T21:22:56 IST" duration-ms="10887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- install_And_Open_Mobile_App -->
+        <test-method signature="TC028_Verify_My_Profile()[pri:0, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:22:56 IST" name="TC028_Verify_My_Profile" finished-at="2023-12-05T21:24:12 IST" duration-ms="75684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC028_Verify_My_Profile -->
+        <test-method signature="TC029_verify_more_detais_button()[pri:1, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:24:12 IST" name="TC029_verify_more_detais_button" finished-at="2023-12-05T21:24:37 IST" duration-ms="24927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC029_verify_more_detais_button -->
+        <test-method signature="TC030_edit_profile_button()[pri:2, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:24:37 IST" name="TC030_edit_profile_button" finished-at="2023-12-05T21:24:59 IST" duration-ms="22161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC030_edit_profile_button -->
+        <test-method signature="TC031_edit_Personal_Details()[pri:3, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:24:59 IST" name="TC031_edit_Personal_Details" finished-at="2023-12-05T21:25:42 IST" duration-ms="42555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC031_edit_Personal_Details -->
+        <test-method signature="TC032_change_original_Personal_Details()[pri:4, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:25:42 IST" name="TC032_change_original_Personal_Details" finished-at="2023-12-05T21:26:02 IST" depends-on-methods="TC031_edit_Personal_Details()" duration-ms="20252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC032_change_original_Personal_Details -->
+        <test-method signature="TC033_Manage_License()[pri:5, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:26:02 IST" name="TC033_Manage_License" finished-at="2023-12-05T21:26:45 IST" duration-ms="43190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC033_Manage_License -->
+        <test-method signature="TC034_Verify_emergency_contacts()[pri:6, instance:Page_Object_Test.My_Profile_Page_Test@28ec166e]" started-at="2023-12-05T21:26:45 IST" name="TC034_Verify_emergency_contacts" finished-at="2023-12-05T21:27:32 IST" duration-ms="46572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC034_Verify_emergency_contacts -->
+      </class> <!-- Page_Object_Test.My_Profile_Page_Test -->
+    </test> <!-- My_Profile_Page_Test -->
+  </suite> <!-- Suite -->
+</testng-results>

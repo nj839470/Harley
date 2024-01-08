@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -22,10 +23,13 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class BaseUtility implements Config_Data_Provider, Excel_Data_Provider, Extent_Report_Generator, Library {
 	public static Logger log;
@@ -49,14 +53,14 @@ public class BaseUtility implements Config_Data_Provider, Excel_Data_Provider, E
 			db.setCapability("platformName", "Android");
 			db.setCapability("appium:deviceName", "Pixel_6_API_33");
 			db.setCapability("appium:udid", "emulator-5554");
-			db.setCapability("appium:avdLaunchTimeout", 900000);
-			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\apk\\app-debug_33.apk"));
+			db.setCapability("appium:avdLaunchTimeout", 90000);
+			db.setCapability("appium:app", (System.getProperty("user.dir") + "\\APK\\Harley.apk"));
 			driver = new AndroidDriver(new URL(config_getdata("IpAddress")), db);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 			db.setCapability("appium:ensureWebviewsHavePages", true);
 			db.setCapability("appium:nativeWebScreenshot", true);
 			db.setCapability("appium:newCommandTimeout", 9600);
-			log = LogManager.getLogger("Hero_App");
+			log = LogManager.getLogger("Harley");
 			lis = new Listner();
 		} catch (Exception e) {
 			System.out.println(e);
@@ -190,16 +194,16 @@ public class BaseUtility implements Config_Data_Provider, Excel_Data_Provider, E
 		try {
 			if (ele.isDisplayed() && ele.isEnabled() == true) {
 				String Text = ele.getText();
-				test.log(Status.PASS, fieldname + " present:");
-				log.info(fieldname + " present");
+				test.log(Status.PASS, fieldname + " Visible:");
+				log.info(fieldname + " Visible");
 			} else {
-				test.log(Status.PASS, fieldname + "  not present");
-				log.info(fieldname + "  not present");
+				test.log(Status.PASS, fieldname + "  not Visible");
+				log.info(fieldname + "  not Visible");
 			}
 		} catch (Exception e) {
-			test.log(Status.FAIL, fieldname + " not present" + e);
+			test.log(Status.FAIL, fieldname + " not Visible" + e);
 			test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
-			log.error(fieldname + "  not present");
+			log.error(fieldname + "  not Visible");
 		}
 
 	}
@@ -312,5 +316,75 @@ public class BaseUtility implements Config_Data_Provider, Excel_Data_Provider, E
 		}
 		return value;
 	}
+	//======================================================================================================================================================	    
+		@SuppressWarnings({ "deprecation", "rawtypes" })
+		public static void Scroll_down_page_Action(String fieldname) {  	
+			    try {
+			    	Dimension dim = driver.manage().window().getSize();	
+//			    	System.out.println(dim);
+			    	int startx = (int)(dim.width/2);
+			    	int starty = (int)(dim.height/2);	    	
+			    	int endx   =  (int)(dim.width/2);  	
+			    	int endy   = (int)(dim.height*0.25);
+					TouchAction action = new TouchAction(driver);
+			    	for(int i=0;i<=1;i++) {
+			    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(10))).moveTo(PointOption.point(endx ,endy))
+			    		.release().perform();
+			    	}
+			    	test.log(Status.PASS, "Successfully Scroll page Action =="+ fieldname);
+			    	log.info("Successfully  Scroll page down Action "+fieldname);
+			    	
+			    }catch(Exception e) {		    	
+				test.log(Status.FAIL,fieldname+ "Unable To Scroll page Action =="+e);
+				test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
+			    	log.error("==NOT==Unable To Scroll page down Action "+fieldname);
+				}	    
+		    }
+		//======================================================================================================================================================	    
+		   @SuppressWarnings({ "deprecation", "rawtypes" })
+			public static void Scroll_UP_page_Action(String fieldname) {  	
+			    try {
+			    	Dimension dim = driver.manage().window().getSize();	    	
+			    	int startx = (int) (dim.width/2);
+			    	int starty = (int) (dim.height/2);	    	
+			    	int endx   =  (int) (dim.width*0);  	
+			    	int endy   = (int) (dim.height*0);
+			    	TouchAction action = new TouchAction(driver);
+			    	for(int i=0;i<=1;i++) {
+			    	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
+			    		.release().perform();
+			    	}
+			    			log.info("Successfully  Scroll up page Action "+fieldname);
+			    	
+			    }catch(Exception e) {		    	
+							log.error("==NOT==Unable To Scroll up page Action "+fieldname);
+				}	    
+		    }
+	//======================================================================================================================================================
+		@SuppressWarnings({ "rawtypes", "deprecation" })
+		public void swipe_page_direction(int startx, int starty, int endx, int endy, String fieldname) {
+			try {
+				TouchAction action = new TouchAction(driver);
+				action.press(PointOption.point(startx, starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+						.moveTo(PointOption.point(endx, endy)).release().perform();
+				log.info("Successfully  Swipe page direction Action " + fieldname);
+				test.log(Status.PASS, "Successfully  Swipe page direction Action = "+ fieldname);
+			} catch (Exception e) {
+				log.error("==NOT==Unable To Swipe page direction Action " + fieldname);
+				test.log(Status.FAIL,fieldname+ "Unable To Swipe page direction Action " + fieldname +e);
+				test.addScreenCaptureFromPath(lis.getcapcture(fieldname));
+			}
+		}
+		//======================================================================================================================================================	    
+		public void scrollByText(String menuText) {
+
+	        try {
+
+	             driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
+	        } catch (Exception e) {
+	           e.printStackTrace();
+	        }
+		}
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }
